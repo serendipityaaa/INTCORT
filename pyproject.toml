@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intcort"
+version = "0.1.0"
+description = "Training-free spatial reasoning enhancement for Qwen2-VL via input transformations and confidence routing"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1",
+    "transformers>=4.49",
+    "qwen-vl-utils>=0.0.10",
+    "Pillow>=10.0",
+    "tqdm>=4.66",
+]
+
+[tool.setuptools.packages.find]
+include = ["intcort*"]
+

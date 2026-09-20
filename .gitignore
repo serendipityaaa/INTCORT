@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+.DS_Store
+
+# Local data, checkpoints, and generated predictions.
+data/
+models/
+checkpoints/
+outputs/
+*.jsonl
+*.json
+
+!examples/*.jsonl
